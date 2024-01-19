@@ -30,11 +30,7 @@ function addData() {
 
 // 3. Remove Admins
 function removeAdmin() {
-  for(let i of data ){
-  if( i.profession == 'admin'){
-    delete data[i];
-  }
-}
+const updatedData = data.filter(item => item.profession !== "admin");
 console.log(data);
 }
 
