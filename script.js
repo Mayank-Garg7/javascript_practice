@@ -17,7 +17,10 @@ function printDeveloper(){
 
 // 2. Add Data
 function addData() {
-  let a = { name: "mayank", age: 21, profession: "frontend developer" };
+  let a = {};
+  a.name = prompt("Enter the name : ");
+  a.age = parseInt(prompt("Enter the age : "));
+  a.profession = prompt("Enter the profession : ");
   data.push(a);
   console.log(data);
 }
@@ -64,7 +67,7 @@ function averageAge() {
 function checkAgeAbove25() {
 for(let i of data){
   if (i.age >= 25){
-  console.log("age is greater than 25");
+  console.log(data[i]);
 }
 }
 }
@@ -96,7 +99,7 @@ function sortByAge() {
 function updateJohnsProfession() {
   for(let i of data){
   if(i == 'john')
-    data[i.profession] = "designer"
+    data[i.profession] = "manager"
   }
   console.log(data)
 }
