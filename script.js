@@ -30,8 +30,8 @@ function addData() {
 
 // 3. Remove Admins
 function removeAdmin() {
-const updatedData = data.filter(item => item.profession !== "admin");
-console.log(data);
+const newData = data.filter(item => item.profession !== "admin");
+console.log(newData);
 }
 
 
@@ -61,8 +61,8 @@ function averageAge() {
 
 // 6. Age Check
 function checkAgeAbove25() {
-for(let i of data){
-  if (i.age >= 25){
+for (let i = 0; i < data.length; i++){
+  if (data[i].age > 25){
   console.log(data[i]);
 }
 }
@@ -93,9 +93,9 @@ function sortByAge() {
 
 // 9. Update Profession
 function updateJohnsProfession() {
-  for(let i of data){
-  if(i == 'john')
-    data[i.profession] = "manager"
+  const john = data.find(item => item.name.toLowerCase() == "john");
+  if (john) {
+    john.profession = "manager";
   }
   console.log(data)
 }
