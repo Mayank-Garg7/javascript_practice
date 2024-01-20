@@ -65,6 +65,13 @@ for (let i = 0; i < data.length; i++){
   if (data[i].age > 25){
   console.log(data[i]);
 }
+  // let result = data.filter((item) => item.age>25)
+  // if result.length >=1{
+  //   console.log("valid");
+  // }
+  // else{
+  //   console.log("invalid");
+  // }
 }
 }
 
@@ -79,7 +86,15 @@ function uniqueProfessions() {
   console.log(Array.from(professionsSet));
 }
 // const uniqueProfs = uniqueProfessions();
-
+/*
+let unique={};
+data.forEach(itme)=>{
+if(!unique.includes(item.profession)){
+unique.push(item.profession);
+}
+}
+console.log(unique);
+*/
 
 
 
@@ -88,6 +103,12 @@ function sortByAge() {
   data.sort((a, b) => a.age - b.age);
   console.log(data)
 }
+/*
+sort by name in ascenfing order
+data.sort((a, b) => b.name.localeCompare(a.name));
+sort by name in descending order
+data.sort((a, b) => a.name.localeCompare(b.name));
+*/
 
 
 
