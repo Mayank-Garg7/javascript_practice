@@ -4,6 +4,7 @@ const data = [
 ];
 
 // 1. Print Developers
+/// Approach 1 - Using for of loop
 function printDeveloper(){
   for (let i of data){
     if (i.profession == "developer") {
@@ -11,6 +12,8 @@ function printDeveloper(){
     }
   }
 }
+
+/// Approach 2 - using simple for loop 
 //function printDeveloper() {
 //   for (let i = 0; i < data.length; i++) {    // i = data 
 //     if (data[i].profession == "developer") {      // यह चेक करेगा की profession प्रॉपर्टी  मे developer है या नहीं 
@@ -19,7 +22,7 @@ function printDeveloper(){
 //   }
 // }
 
-// 1. Print Developers using filter method
+/// Approach 3 - Print Developers using filter method
 // function printDeveloper() {
 //   const developer = data.filter(person => person.profession === "developer");
 //   developer.forEach(developer => console.log(developer));
