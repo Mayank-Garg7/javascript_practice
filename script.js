@@ -14,51 +14,51 @@ function printDeveloper(){
 }
 
 //// Approach 2 - using simple for loop 
-// function printDeveloper() {
-//   for (let i = 0; i < data.length; i++) {    
-//     if (data[i].profession == "developer") {   
-//       console.log(data[i]); 
-//     }
-//   }
-// }
+function printDeveloper() {
+  for (let i = 0; i < data.length; i++) {    
+    if (data[i].profession == "developer") {   
+      console.log(data[i]); 
+    }
+  }
+}
 
-//// Approach 3 - using filter method
-// function printDeveloper() {
-//   const developer = data.filter(person => person.profession === "developer");
-//   developer.forEach(developer => console.log(developer));
-// }
-
-
-
-// 2. Add Data
-//// Approach 1 
-// function addData() {
-//   let a = {};
-//   a.name = prompt("Enter the name : ");
-//   a.age = parseInt(prompt("Enter the age : "));
-//   a.profession = prompt("Enter the profession : ");
-//   data.push(a);
-//   console.log(data);
-// }
-
-
-//// Approach 2 
-function addData() {
-  const name = prompt("Enter name:");  
-  const age = parseInt(prompt("Enter age:"));  
-  const profession = prompt("Enter profession:"); 
-  const newUser = { name, age, profession };    
-  data.push(newUser);
-  console.log(data);
+// Approach 3 - using filter method
+function printDeveloper() {
+  const developer = data.filter(person => person.profession === "developer");
+  developer.forEach(developer => console.log(developer));
 }
 
 
 
-// 3. Remove Admins
-// function removeAdmin() {
-// const newData = data.filter(item => item.profession !== "admin");
-// console.log(newData);
+// 2. Add Data
+// Approach 1 
+function addData() {
+  let a = {};
+  a.name = prompt("Enter the name : ");
+  a.age = parseInt(prompt("Enter the age : "));
+  a.profession = prompt("Enter the profession : ");
+  data.push(a);
+  console.log(data);
+}
+
+
+//// Approach 2 
+// function addData() {
+//   const name = prompt("Enter name:");  
+//   const age = parseInt(prompt("Enter age:"));  
+//   const profession = prompt("Enter profession:"); 
+//   const newUser = { name, age, profession };    
+//   data.push(newUser);
+//   console.log(data);
 // }
+
+
+
+// 3. Remove Admins
+function removeAdmin() {
+const newData = data.filter(item => item.profession !== "admin");
+console.log(newData);
+}
 
 
 // 4. Concatenate Array
@@ -82,7 +82,7 @@ function averageAge() {
   console.log(c);
 }
 
-//// Approach 2 using simple for loop
+//// Approach 2 - using simple for loop
 // function averageAge() {
 //   let sum = 0;           
 //   for (let i = 0; i < data.length; i++) {    
@@ -103,14 +103,14 @@ function averageAge() {
 
 
 // 6. Age Check
-//// Approach1 - using simple for loop
-// function checkAgeAbove25() {
-//   for (let i = 0; i < data.length; i++){
-//     if (data[i].age > 25){
-//         console.log(data[i]);
-//     }
-//   }
-// }
+// Approach1 - using simple for loop
+function checkAgeAbove25() {
+  for (let i = 0; i < data.length; i++){
+    if (data[i].age > 25){
+        console.log(data[i]);
+    }
+  }
+}
 
 
 //// Approach 2 - using conditional statements.
